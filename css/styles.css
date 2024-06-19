@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@keyframes rodarEstrella {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    100% {
+        transform: translateX(100vw) rotate(360deg);
+    }
+}
+
+html {
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-family: "Inter";
+    font-size: 30px;
+}
+p {
+    font-family: "Inter";
+    font-size: 20px;
+    text-align: center;
+}
+h2 {
+    font-family: "Inter";
+    font-size: 70px;
+}
+
+
+#boton-de-instagram {
+    display: block;
+    margin: auto;
+    width: 80px;
+    height: 25px;
+    border: 3px solid rgb(73, 222, 255);
+    background-color: rgb(73, 222, 255);
+    color: rgb(252, 252, 252);
+}
+
+main {
+    width: 90%;
+    border: 3px solid rgb(27, 213, 255);
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+video {
+    width: 50%;
+    display: block;
+    margin: 10px auto;
+}
+
+div {
+    width: 30%;
+}
+/* Estilo y animación para la estrella rodante */
+
+#animacion-estrella {
+    width: 150px;
+    height: 120px;
+    background-image: url('../images/estrella.png'); /* Cambia esta ruta a la de tu imagen de estrella */
+    animation: rodarEstrella 5s linear infinite;
+}
+
+/* Estilo para el footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #00d9ff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
